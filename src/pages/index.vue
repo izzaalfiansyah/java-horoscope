@@ -1,0 +1,24 @@
+<template>
+  <div class="min-h-screen flex items-center justify-between space-x-20">
+    <img
+      src="https://static.vecteezy.com/system/resources/thumbnails/029/145/582/small_2x/astrology-wheel-with-zodiac-signs-vintage-frame-divine-magic-hand-drawn-antique-illustration-png.png"
+      class="w-350px"
+      alt=""
+    />
+    <div class="grow space-y-8">
+      <div class="text-3xl font-semibold">Baca Ramalan Tentang Dirimu</div>
+      <p class="font-thin">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quo eligendi
+        doloremque nisi dignissimos, eius numquam fugit. Iste, eveniet
+        doloremque repudiandae quidem, suscipit iure fugit, officiis facere
+        dolorum dolorem minima.
+      </p>
+      <router-link
+        to="/diri"
+        class="bg-primary no-underline inline-block text-gray-900 font-normal px-8 py-2.5 rounded-full border-none cursor-pointer hover:bg-opacity-90 transition"
+      >
+        RAMAL SEKARANG
+      </router-link>
+    </div>
+  </div>
+</template>
