@@ -103,5 +103,16 @@ const toggleSidebar = () => {
     <div class="lg:px-32 p-5">
       <router-view> </router-view>
     </div>
+    <div class="py-5 mt-10 lg:text-base text-sm text-center bg-primary">
+      Copyright &copy; 2024
+      <a
+        href="http://izzaalfiansyah.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-gray-900 no-underline"
+      >
+        Muhammad Izza alfiansyah
+      </a>
+    </div>
   </div>
 </template>
