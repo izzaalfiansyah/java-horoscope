@@ -1,11 +1,15 @@
 <template>
-  <div class="min-h-screen flex items-center justify-between space-x-20">
+  <div
+    class="min-h-screen flex lg:flex-row flex-col lg:pt-0 pt-20 items-center justify-between lg:space-x-20"
+  >
     <img
       src="https://static.vecteezy.com/system/resources/thumbnails/029/145/582/small_2x/astrology-wheel-with-zodiac-signs-vintage-frame-divine-magic-hand-drawn-antique-illustration-png.png"
       class="w-350px"
       alt=""
     />
-    <div class="grow space-y-8">
+    <div
+      class="grow space-y-8 w-full lg:w-auto lg:pt-0 pt-10 text-center lg:text-left"
+    >
       <div class="text-3xl font-semibold">Baca Ramalan Tentang Dirimu</div>
       <p class="font-thin">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quo eligendi
