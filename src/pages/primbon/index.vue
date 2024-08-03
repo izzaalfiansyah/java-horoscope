@@ -104,28 +104,36 @@ const handleSubmit = async () => {
       <div class="mt-5">
         <div class="overflow-x-auto">
           <table
-            class="border border-solid border-collapse w-full font-thin whitespace-nowrap"
+            class="border border-solid border-collapse w-full font-thin whitespace-nowrap text-sm"
           >
             <thead>
               <tr>
-                <td class="border border-solid border-gray-800 p-3">No</td>
-                <td class="border border-solid border-gray-800 p-3">Nama</td>
-                <td class="border border-solid border-gray-800 p-3">Asal</td>
-                <td class="border border-solid border-gray-800 p-3">Arti</td>
+                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
+                  No
+                </td>
+                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
+                  Nama
+                </td>
+                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
+                  Asal
+                </td>
+                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
+                  Arti
+                </td>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(item, i) in artiNamaBahasa">
-                <td class="border border-solid border-gray-800 p-3">
+                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
                   {{ i + 1 }}
                 </td>
-                <td class="border border-solid border-gray-800 p-3">
+                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
                   {{ item.nama }}
                 </td>
-                <td class="border border-solid border-gray-800 p-3">
+                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
                   {{ item.asal }}
                 </td>
-                <td class="border border-solid border-gray-800 p-3">
+                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
                   {{ item.arti }}
                 </td>
               </tr>
