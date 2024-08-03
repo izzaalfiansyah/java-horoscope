@@ -1,5 +1,6 @@
 <script lang="ts" setup="">
 import { ref } from "vue";
+import ScrollTopButton from "./components/ScrollTopButton.vue";
 
 interface Menu {
   path: string;
@@ -114,5 +115,7 @@ const toggleSidebar = () => {
         Muhammad Izza alfiansyah
       </a>
     </div>
+
+    <ScrollTopButton />
   </div>
 </template>
