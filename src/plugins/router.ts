@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Index from "../pages/index.vue";
-import Diri from "../pages/diri/index.vue";
+import Primbon from "../pages/primbon/index.vue";
 
 const routes = [
   {
@@ -8,8 +8,8 @@ const routes = [
     component: Index,
   },
   {
-    path: "/diri",
-    component: Diri,
+    path: "/primbon",
+    component: Primbon,
   },
 ];
 

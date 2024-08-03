@@ -14,7 +14,7 @@
         dolorum dolorem minima.
       </p>
       <router-link
-        to="/diri"
+        to="/primbon"
         class="bg-primary no-underline inline-block text-gray-900 font-normal px-8 py-2.5 rounded-full border-none cursor-pointer hover:bg-opacity-90 transition"
       >
         RAMAL SEKARANG

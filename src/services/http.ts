@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 
 const http: AxiosInstance = axios.create({
-  baseURL: "https://java-horoscope-api.vercel.app",
+  baseURL: "http://localhost:8080",
 });
 
 export default http;

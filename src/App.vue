@@ -10,8 +10,8 @@ const menus: Menu[] = [
     title: "Beranda",
   },
   {
-    path: "/diri",
-    title: "Ramal Diri",
+    path: "/primbon",
+    title: "Primbon",
   },
   {
     path: "/pasangan",
@@ -29,7 +29,7 @@ const menus: Menu[] = [
     class="min-h-screen bg-gray-900 text-gray-100 font-light text-base font-sans"
   >
     <div
-      class="fixed top-0 right-0 left-0 bg-transparent drop-shadow h-20 p-5 lg:px-32 flex items-center justify-between z-20 border-b-solid border-gray-800"
+      class="fixed top-0 right-0 left-0 bg-transparent backdrop-blur h-20 p-5 lg:px-32 flex items-center justify-between z-20 border-b-solid border-gray-800"
     >
       <div class="text-lg font-semibold">
         HORO<span class="text-primary">SCOPE</span>
