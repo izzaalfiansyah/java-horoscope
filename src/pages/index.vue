@@ -2,11 +2,7 @@
   <div
     class="min-h-screen flex lg:flex-row flex-col lg:pt-0 pt-20 items-center justify-between lg:space-x-20"
   >
-    <img
-      src="https://static.vecteezy.com/system/resources/thumbnails/029/145/582/small_2x/astrology-wheel-with-zodiac-signs-vintage-frame-divine-magic-hand-drawn-antique-illustration-png.png"
-      class="lg:w-350px w-300px"
-      alt=""
-    />
+    <img src="../assets/astro.webp" class="lg:w-350px w-300px" alt="" />
     <div
       class="grow space-y-8 w-full lg:w-auto lg:pt-0 pt-10 text-center lg:text-left"
     >
