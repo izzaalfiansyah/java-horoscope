@@ -43,7 +43,7 @@ const handleSubmit = async () => {
 <template>
   <div class="h-screen flex flex-col items-center justify-center">
     <form
-      class="border border-solid border-gray-800 w-full lg:w-xl rounded lg:p-20 p-10"
+      class="border border-solid border-gray-800 w-full lg:w-xl rounded lg:p-20 lg:p-10 p-5"
       @submit.prevent="handleSubmit"
     >
       <div class="text-gray-400 mb-3">Nama</div>
@@ -91,7 +91,9 @@ const handleSubmit = async () => {
         {{ req.nama }} ({{ primbonTanggalLahir?.tgl_lahir }})
       </div>
     </div>
-    <div class="mt-10 border rounded-lg border-solid border-gray-800 p-10">
+    <div
+      class="mt-10 border rounded-lg border-solid border-gray-800 lg:p-10 p-5"
+    >
       <div class="text-center text-lg font-semibold text-primary">
         Arti Nama
       </div>
@@ -140,7 +142,9 @@ const handleSubmit = async () => {
         </div>
       </div>
     </div>
-    <div class="mt-10 border rounded-lg border-solid border-gray-800 p-10">
+    <div
+      class="mt-10 border rounded-lg border-solid border-gray-800 lg:p-10 p-5"
+    >
       <div class="text-center text-lg font-semibold text-primary">
         Ramalan Primbon
       </div>
