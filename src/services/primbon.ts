@@ -1,6 +1,7 @@
 import http from "./http";
 import { ArtiNamaBahasa, ArtiNamaPrimbon } from "../types/arti-nama";
 import { PrimbonTanggalLahir } from "../types/primbon-tanggal-lahir";
+import { GarisHidup } from "../types/garis-hidup";
 
 export default class Primbon {
   static async getArtiNama(props: { nama: string }): Promise<{
@@ -22,6 +23,7 @@ export default class Primbon {
   }): Promise<{
     success: boolean;
     primbon?: PrimbonTanggalLahir;
+    garis_hidup?: GarisHidup;
   } | null> {
     try {
       const res = await http.post("/primbon", {

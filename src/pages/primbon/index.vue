@@ -3,7 +3,9 @@ import { ref } from "vue";
 import Primbon from "../../services/primbon";
 import { ArtiNamaBahasa, ArtiNamaPrimbon } from "../../types/arti-nama";
 import { PrimbonTanggalLahir } from "../../types/primbon-tanggal-lahir";
+import { GarisHidup } from "../../types/garis-hidup";
 import Accordion from "../../components/Accordion.vue";
+
 const dates = new Date();
 
 const date = dates.getDate() < 10 ? "0" + dates.getDate() : dates.getDate();
@@ -19,6 +21,7 @@ const req = ref({
 const artiNamaBahasa = ref<ArtiNamaBahasa[]>([]);
 const artiNamaPrimbon = ref<ArtiNamaPrimbon[]>([]);
 const primbonTanggalLahir = ref<PrimbonTanggalLahir | null>();
+const garisHidup = ref<GarisHidup | null>();
 
 const isLoading = ref<boolean>(false);
 const el = ref<HTMLDivElement>();
@@ -34,6 +37,7 @@ const handleSubmit = async () => {
     tanggal_lahir: req.value.tanggalLahir,
   });
   primbonTanggalLahir.value = primbon?.primbon;
+  garisHidup.value = primbon?.garis_hidup;
 
   isLoading.value = false;
   window.scrollTo(0, el.value?.offsetTop as number);
@@ -240,6 +244,17 @@ const handleSubmit = async () => {
           :content="(primbonTanggalLahir?.saat_yang_tepat as string)"
         />
       </div>
+    </div>
+    <div
+      class="mt-10 border rounded-lg border-solid border-gray-800 lg:p-10 p-5"
+    >
+      <div class="text-center text-lg font-semibold text-primary">
+        Karakter : Garis Hidup {{ garisHidup?.garis_hidup }}
+      </div>
+      <div
+        class="mt-5 text-gray-400 lg:text-base text-sm"
+        v-html="garisHidup?.detail"
+      ></div>
     </div>
   </div>
 </template>
