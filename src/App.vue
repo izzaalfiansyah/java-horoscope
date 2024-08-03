@@ -43,7 +43,7 @@ const toggleSidebar = () => {
         HORO<span class="text-primary">SCOPE</span>
       </div>
       <button
-        class="border-none bg-transparent text-white"
+        class="border-none bg-transparent text-white lg:hidden"
         @click="toggleSidebar"
       >
         <svg
@@ -62,10 +62,10 @@ const toggleSidebar = () => {
         </svg>
       </button>
       <div
-        class="lg:block fixed z-30 top-0 bottom-0 right-0 w-72 lg:w-auto lg:bg-transparent bg-gray-900 h-screen lg:h-auto border-l-solid lg:border-l-none border-gray-800 lg:p-0 p-5 lg:!translate-x-0 translate-x-full transition"
+        class="!lg:relative fixed z-30 top-0 bottom-0 right-0 w-72 lg:w-auto lg:bg-transparent bg-gray-900 h-screen lg:h-auto border-l-solid lg:border-l-none border-gray-800 lg:p-0 p-5 lg:!translate-x-0 translate-x-full transition"
         :class="{ '!translate-x-0': showSidebar }"
       >
-        <div class="text-right mb-10">
+        <div class="text-right mb-10 lg:hidden">
           <button class="bg-transparent border-none" @click="toggleSidebar">
             <svg
               xmlns="http://www.w3.org/2000/svg"
