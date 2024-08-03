@@ -50,7 +50,7 @@ const handleSubmit = async () => {
       <input
         type="text"
         placeholder="Masukkan Namamu"
-        class="w-full rounded-full border-solid border-gray-800 bg-transparent px-5 py-3 outline-none focus:border-primary transition text-gray-100"
+        class="w-full rounded-full border-solid border-gray-800 bg-transparent px-5 py-3 outline-none focus:border-primary transition text-gray-100 disabled:bg-gray-800"
         v-model="req.nama"
         :disabled="isLoading"
         required
@@ -60,7 +60,7 @@ const handleSubmit = async () => {
       <input
         type="date"
         placeholder="Masukkan Namamu"
-        class="w-full rounded-full border-solid border-gray-800 bg-transparent px-5 py-3 outline-none focus:border-primary transition text-gray-100"
+        class="w-full rounded-full border-solid border-gray-800 bg-transparent px-5 py-3 outline-none focus:border-primary transition text-gray-100 disabled:bg-gray-800"
         :max="dateNow"
         v-model="req.tanggalLahir"
         :disabled="isLoading"
