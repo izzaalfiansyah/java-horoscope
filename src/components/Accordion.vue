@@ -36,7 +36,7 @@ const toggleContent = () => {
       </svg>
     </div>
     <p
-      class="text-gray-400 mt-3"
+      class="text-gray-400 mt-3 lg:text-base text-sm"
       :class="{ hidden: !showContent }"
       v-html="content"
     ></p>

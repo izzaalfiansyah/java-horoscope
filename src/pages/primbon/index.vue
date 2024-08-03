@@ -138,7 +138,7 @@ const handleSubmit = async () => {
             <span class="font-normal text-primary">{{ item.nama }}</span>
             memiliki arti {{ item.arti }}
           </div>
-          <p class="text-gray-400">{{ item.detail }}</p>
+          <p class="text-gray-400 lg:text-base text-sm">{{ item.detail }}</p>
         </div>
       </div>
     </div>

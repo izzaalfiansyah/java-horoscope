@@ -4,7 +4,7 @@
   >
     <img
       src="https://static.vecteezy.com/system/resources/thumbnails/029/145/582/small_2x/astrology-wheel-with-zodiac-signs-vintage-frame-divine-magic-hand-drawn-antique-illustration-png.png"
-      class="w-350px"
+      class="lg:w-350px w-300px"
       alt=""
     />
     <div
