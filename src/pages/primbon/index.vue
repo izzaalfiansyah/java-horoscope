@@ -108,16 +108,24 @@ const handleSubmit = async () => {
           >
             <thead>
               <tr>
-                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
+                <td
+                  class="border border-solid font-normal border-gray-800 lg:p-3 p-2.5"
+                >
                   No
                 </td>
-                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
+                <td
+                  class="border border-solid font-normal border-gray-800 lg:p-3 p-2.5"
+                >
                   Nama
                 </td>
-                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
+                <td
+                  class="border border-solid font-normal border-gray-800 lg:p-3 p-2.5"
+                >
                   Asal
                 </td>
-                <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
+                <td
+                  class="border border-solid font-normal border-gray-800 lg:p-3 p-2.5"
+                >
                   Arti
                 </td>
               </tr>
@@ -135,6 +143,14 @@ const handleSubmit = async () => {
                 </td>
                 <td class="border border-solid border-gray-800 lg:p-3 p-2.5">
                   {{ item.arti }}
+                </td>
+              </tr>
+              <tr v-show="artiNamaBahasa.length <= 0">
+                <td
+                  class="border border-solid border-gray-800 lg:p-3 p-2.5 text-center"
+                  colspan="4"
+                >
+                  Tidak diketahui
                 </td>
               </tr>
             </tbody>
@@ -218,7 +234,7 @@ const handleSubmit = async () => {
       </div>
       <div class="mt-5 mb-5">
         <Accordion
-          title="Keadaan Masa Remaja"
+          title="Keadaan Masa Remaja/Dewasa"
           :content="(primbonTanggalLahir?.keadaan_masa_remaja as string)"
         />
       </div>
@@ -248,7 +264,7 @@ const handleSubmit = async () => {
       </div>
       <div class="mt-5 mb-5">
         <Accordion
-          title="Saat yang Tepat"
+          title="Saat yang Baik"
           :content="(primbonTanggalLahir?.saat_yang_tepat as string)"
         />
       </div>
