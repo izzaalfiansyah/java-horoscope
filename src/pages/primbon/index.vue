@@ -40,7 +40,7 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <div class="h-screen flex flex-col items-center justify-center">
+  <div class="min-h-screen flex flex-col items-center justify-center">
     <form
       class="border border-solid border-gray-800 w-full lg:w-xl rounded lg:p-20 lg:p-10 p-5"
       @submit.prevent="handleSubmit"
