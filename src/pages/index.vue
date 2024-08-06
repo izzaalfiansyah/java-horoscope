@@ -8,10 +8,9 @@
     >
       <div class="text-3xl font-semibold">Baca Ramalan Tentang Dirimu</div>
       <p class="font-thin">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quo eligendi
-        doloremque nisi dignissimos, eius numquam fugit. Iste, eveniet
-        doloremque repudiandae quidem, suscipit iure fugit, officiis facere
-        dolorum dolorem minima.
+        Dapatkan wawasan tentang kehidupan, cinta, dan kariermu dengan ramalan
+        pribadi. Temukan rahasia masa depanmu dengan membaca ramalan yang
+        mendalam.
       </p>
       <router-link
         to="/primbon"

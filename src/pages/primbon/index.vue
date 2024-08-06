@@ -5,14 +5,9 @@ import { ArtiNamaBahasa, ArtiNamaPrimbon } from "../../types/arti-nama";
 import { PrimbonTanggalLahir } from "../../types/primbon-tanggal-lahir";
 import { GarisHidup } from "../../types/garis-hidup";
 import Accordion from "../../components/Accordion.vue";
+import { dateNow } from "../../plugins/dates";
 
-const dates = new Date();
-
-const date = dates.getDate() < 10 ? "0" + dates.getDate() : dates.getDate();
-const month = dates.getMonth() < 10 ? "0" + dates.getMonth() : dates.getMonth();
-const year = dates.getFullYear();
-
-const dateNow = `${year}-${month}-${date}`;
+const now = dateNow();
 
 const req = ref({
   nama: "",
@@ -65,7 +60,7 @@ const handleSubmit = async () => {
         type="date"
         placeholder="Masukkan Namamu"
         class="w-full rounded-full border-solid border-gray-800 bg-transparent px-5 py-3 outline-none focus:border-primary transition text-gray-100 disabled:bg-gray-800"
-        :max="dateNow"
+        :max="now"
         v-model="req.tanggalLahir"
         :disabled="isLoading"
         required

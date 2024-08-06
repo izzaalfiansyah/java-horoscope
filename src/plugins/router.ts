@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Index from "../pages/index.vue";
 import Primbon from "../pages/primbon/index.vue";
+import Pasangan from "../pages/pasangan/index.vue";
 import ComingSoon from "../pages/coming-soon/index.vue";
 
 const routes = [
@@ -14,7 +15,7 @@ const routes = [
   },
   {
     path: "/pasangan",
-    component: ComingSoon,
+    component: Pasangan,
   },
   {
     path: "/pekerjaan",
