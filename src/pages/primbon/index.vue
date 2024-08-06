@@ -99,7 +99,7 @@ const handleSubmit = async () => {
       <div class="text-center text-lg font-semibold text-primary">
         Arti Nama
       </div>
-      <div class="mt-5">
+      <div class="mt-5" v-show="artiNamaBahasa.length > 0">
         <div class="overflow-x-auto">
           <table
             class="border border-solid border-collapse w-full font-thin whitespace-nowrap text-sm"
