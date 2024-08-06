@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Index from "../pages/index.vue";
 import Primbon from "../pages/primbon/index.vue";
 import Pasangan from "../pages/pasangan/index.vue";
@@ -24,7 +24,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior(_, __, savedPosition) {
     if (savedPosition) {
