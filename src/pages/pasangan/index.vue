@@ -38,11 +38,11 @@ const handleSubmit = async () => {
         class="flex lg:flex-row flex-col items-stretch justify-between gap-10 relative"
       >
         <div class="grow">
-          <div class="text-center text-primary text-xl mb-5">Pria</div>
-          <div class="text-gray-400 mb-3">Nama Pria</div>
+          <div class="text-center text-primary text-xl mb-5">Anda</div>
+          <div class="text-gray-400 mb-3">Nama Anda</div>
           <input
             type="text"
-            placeholder="Masukkan Nama Pria"
+            placeholder="Masukkan Nama Anda"
             class="w-full rounded-full border-solid border-gray-800 bg-transparent px-5 py-3 outline-none focus:border-primary transition text-gray-100 disabled:bg-gray-800"
             v-model="req.nama1"
             :disabled="isLoading"
@@ -61,11 +61,11 @@ const handleSubmit = async () => {
         </div>
         <div class="lg:border-l-solid border-b-solid border-gray-800"></div>
         <div class="grow">
-          <div class="text-center text-primary text-xl mb-5">Wanita</div>
-          <div class="text-gray-400 mb-3">Nama Wanita</div>
+          <div class="text-center text-primary text-xl mb-5">Pasangan</div>
+          <div class="text-gray-400 mb-3">Nama Pasangan</div>
           <input
             type="text"
-            placeholder="Masukkan Nama Wanita"
+            placeholder="Masukkan Nama Pasangan"
             class="w-full rounded-full border-solid border-gray-800 bg-transparent px-5 py-3 outline-none focus:border-primary transition text-gray-100 disabled:bg-gray-800"
             v-model="req.nama2"
             :disabled="isLoading"
