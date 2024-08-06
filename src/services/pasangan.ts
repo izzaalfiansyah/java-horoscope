@@ -6,9 +6,9 @@ import http from "./http";
 
 export interface GetResponseData {
   identitas: IdentitasPasangan;
-  perjalanan_hidup: PerjalananHidup;
+  perjalanan_hidup: PerjalananHidup[];
   perjalanan_hidup_nb: string;
-  primbon: PrimbonPasangan;
+  primbon: PrimbonPasangan[];
   primbon_nb: string;
   ramalan: RamalanPasangan;
 }

@@ -35,7 +35,10 @@ const handleSubmit = async () => {
   garisHidup.value = primbon?.garis_hidup;
 
   isLoading.value = false;
-  window.scrollTo(0, el.value?.offsetTop as number);
+
+  setTimeout(() => {
+    window.scrollTo(0, el.value?.offsetTop as number);
+  }, 500);
 };
 </script>
 
